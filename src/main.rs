@@ -31,7 +31,7 @@ fn app(cx: Scope) -> Element {
                                 figure {
                                     class: "image is-square",
                                     img {
-                                        src: "/images/cat.webp",
+                                        src: "/images/cat.avif",
                                     },
                                 },
                                 button {
