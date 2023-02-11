@@ -1,4 +1,4 @@
-let m,p,ls,lss,sp,d,t,c,s,sl,op,i,e,z,n,event_name,id,many,field,ns,ptr,len,tmpl_id,index,text,root,value,bubbles;const ns_cache = [];const evt = [];const attr = [];
+let m,p,ls,lss,sp,d,t,c,s,sl,op,i,e,z,n,root,text,bubbles,value,id,len,ns,tmpl_id,many,ptr,event_name,field,index;const evt = [];const ns_cache = [];const attr = [];
     class ListenerMap {
         constructor(root) {
             // bubbling events can listen at the root element
