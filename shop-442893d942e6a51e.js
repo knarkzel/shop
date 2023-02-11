@@ -829,12 +829,12 @@ imports.wbg.__wbg_value_1f2c9e357d18d3ea = function(arg0, arg1) {
     getInt32Memory0()[arg0 / 4 + 1] = len0;
     getInt32Memory0()[arg0 / 4 + 0] = ptr0;
 };
-imports.wbg.__wbindgen_closure_wrapper630 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 37, __wbg_adapter_18);
+imports.wbg.__wbindgen_closure_wrapper631 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 39, __wbg_adapter_18);
     return addHeapObject(ret);
 };
-imports.wbg.__wbindgen_closure_wrapper1336 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 56, __wbg_adapter_21);
+imports.wbg.__wbindgen_closure_wrapper1342 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 58, __wbg_adapter_21);
     return addHeapObject(ret);
 };
 imports['./snippets/dioxus-interpreter-js-dab579f08da5298b/inline0.js'] = __wbg_star0;
@@ -873,7 +873,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('shop-ff0a4e6161299dc6_bg.wasm', import.meta.url);
+        input = new URL('shop-442893d942e6a51e_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
