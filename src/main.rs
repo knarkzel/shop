@@ -30,12 +30,8 @@ fn app(cx: Scope) -> Element {
                                 },
                                 picture {
                                     class: "image is-square",
-                                    source {
-                                        src: "/shop/images/cat.avif",
-                                        "type": "image/avif",
-                                    },
                                     img {
-                                        src: "/images/cat.avif",
+                                        src: "images/cat.avif",
                                     },
                                 },
                                 button {
