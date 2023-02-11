@@ -28,8 +28,11 @@ fn app(cx: Scope) -> Element {
                                     class: "subtitle",
                                     "$25 each",
                                 },
-                                figure {
+                                picture {
                                     class: "image is-square",
+                                    img {
+                                        src: "/shop/images/cat.avif",
+                                    },
                                     img {
                                         src: "/images/cat.avif",
                                     },
