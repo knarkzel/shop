@@ -18,11 +18,16 @@ jobs:
             ~/.cargo/git/db/
             target/
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
       - uses: actions/checkout@v3
-      - uses: cachix/install-nix-action@v18
+      - name: Cache install Nix packages
+        uses: mtoohey31/cache-flake-attrs@v2
         with:
-          github_access_token: ${{ secrets.GITHUB_TOKEN }}
-      - run: nix develop --command trunk build --release --public-url shop
+          key: ${{ runner.os }}-nix-${{ hashFiles("./flake.lock", "./flake.nix") }}
+
+      - name: Build web assembly
+        run: nix --extra-experimental-features nix-command --extra-experimental-features flakes develop --ignore-environment --command trunk build --release --public-url shop
+
       - uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
