@@ -28,7 +28,7 @@
         targets = ["wasm32-unknown-unknown"];
       };
     in {
-      devShell = pkgs.mkShell {
+      devShells.default = pkgs.mkShell {
         buildInputs = [
           rust
           pkgs.trunk
