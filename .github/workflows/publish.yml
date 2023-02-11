@@ -19,12 +19,6 @@ jobs:
             target/
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
-      # - uses: actions/checkout@v3
-      # - uses: cachix/install-nix-action@v18
-      #   with:
-      #     github_access_token: ${{ secrets.GITHUB_TOKEN }}
-      # - run: nix develop --command trunk build --release --public-url shop
-
       - uses: actions/checkout@v3
       - name: Cache install Nix packages
         uses: mtoohey31/cache-flake-attrs@v2
