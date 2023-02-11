@@ -30,6 +30,7 @@ jobs:
         uses: mtoohey31/cache-flake-attrs@v2
         with:
           key: ${{ runner.os }}-nix-${{ hashFiles('./flake.lock', './flake.nix') }}
+
       - name: Build website
       - run: nix develop --command trunk build --release --public-url shop
         
