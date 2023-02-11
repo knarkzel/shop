@@ -57,6 +57,7 @@ fn app(cx: Scope) -> Element {
                 class: "columns",
                 Product { name: "Cat", price: 25, image: "images/cat.webp", fallback_image: "images/cat.jpg" },
                 Product { name: "Dog", price: 50, image: "images/dog.webp", fallback_image: "images/dog.jpg" },
+                Product { name: "Fox", price: 75, image: "images/fox.webp", fallback_image: "images/fox.jpg" },
             },
         },
     })
