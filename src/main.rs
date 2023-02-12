@@ -1,3 +1,4 @@
+use fermi::prelude::*;
 use dioxus::prelude::*;
 
 fn main() {
@@ -46,12 +47,33 @@ fn Product<'a>(cx: Scope<'a, ProductProps<'a>>) -> Element {
 }
 
 fn app(cx: Scope) -> Element {
+    // Setup fermi
+    use_init_atom_root(cx);
+    
     cx.render(rsx! {
         main {
-            class: "container ",
-            h1 {
-                class: "title is-1 has-text-centered mt-2",
-                "Shop",
+            class: "container",
+            nav {
+                class: "navbar mb-4",
+                div {
+                    class: "navbar-brand",
+                    a {
+                        class: "navbar-item",
+                        href: "#",
+                        "Home",
+                    },
+                },
+                div {
+                    class: "navbar-menu",
+                    div {
+                        class: "navbar-start",
+                        a {
+                            class: "navbar-item",
+                            href: "#",
+                            "Shop",
+                        },
+                    },
+                },
             },
             div {
                 class: "columns",
